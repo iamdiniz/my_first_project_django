@@ -21,6 +21,11 @@ from django.http import HttpResponse
 # HTTP Request > < HTTP Response
 
 
+def home(request):
+    print("HOME")
+    return HttpResponse("HOME")
+
+
 def my_view(request):
     print("Hello World")
     return HttpResponse('Sending message to you')
@@ -29,4 +34,5 @@ def my_view(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', my_view),
+    path('', home),
 ]
