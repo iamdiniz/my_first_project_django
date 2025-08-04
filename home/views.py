@@ -6,5 +6,5 @@ def home(request):
     print('home')
     return render(
         request,
-        'global/base.html'
+        'home/index.html'
     )
