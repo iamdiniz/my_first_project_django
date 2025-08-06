@@ -29,3 +29,5 @@
         {{ text }}
 
     {% endblock texto %}
+
+    - Podemos pegar dados e jogar no template agora.
