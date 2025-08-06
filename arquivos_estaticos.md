@@ -17,3 +17,25 @@
     > {% load static %}
 
     - o load carrega coisas
+
+3. O static também pode colidir nomes
+
+    - Para resolver isso, vamos criar uma pasta de arquivo estatico referente ao seu app
+
+    > home > static > home > css, js, img
+
+4. Podemos criar um static até global, na raiz
+
+    - Se você fizer um static no seu global, é só você incluir a pasta static.
+
+    - Inclua os arquivos estaticos referentes a ela em settings.py
+
+    - vá em:
+
+    > STATIC_URL = 'static/'
+
+    - Coloque:
+
+    > STATICFILES_DIRS = [
+        BASE_DIR / 'base' / 'static'
+    ]
